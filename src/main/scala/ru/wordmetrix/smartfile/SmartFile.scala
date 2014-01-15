@@ -79,7 +79,7 @@ class SmartFile(val file: File) {
     def readLines() = io.Source.fromFile(file).getLines
 
     def copyTo(foutname: SmartFile) = {
-        println("%s -> %s".format(file, foutname))
+        //println("%s -> %s".format(file, foutname))
         foutname.write(file.read())
     }
 
